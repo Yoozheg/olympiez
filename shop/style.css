@@ -1,0 +1,32 @@
+@charset "utf-8";
+@font-face{font-family:"Open Sans Light";src:url("fonts/OpenSansLight.ttf") format("truetype")}
+@font-face{font-family:"Kelson Sans Bold";src:url("fonts/KelsonSansBold.ttf") format("truetype")}
+@font-face{font-family:"PF Agora Slab Pro";src:url("fonts/PFAgoraSlabPro.ttf") format("truetype")}
+@font-face{font-family:"PF Agora Serif Pro";src:url("fonts/PFAgoraSerifPro.ttf") format("truetype")}
+@font-face{font-family:"Kelson Sans Regular";src:url("fonts/KelsonSansRegular.ttf") format("truetype")}
+*{padding:0;margin:0}
+body{color:#000;background:#fff;font:16px/24px "Trebuchet MS",Calibri,sans-serif}
+header,main,footer,nav,aside,section,article,figure,figcaption{display:block}
+.left{float:left}
+.right{float:right}
+section,footer,header,.clear{clear:both}
+button,.splash{cursor:pointer}
+.animated{opacity:0;transition:1s all}
+.animated.scroll{opacity:1}
+
+main{width:960px;position:relative;margin:0 auto}
+#splash{position:fixed;z-index:10;left:0;right:0;top:0;bottom:0;background:rgba(0,0,0,.8) center center no-repeat;background-size:contain;display:none}
+
+.slider{position:relative;margin:0 auto}
+.slider div{position:absolute;top:0;bottom:0;background:center center no-repeat;left:0;width:0;transition:0.6s all}
+.slider div.showed{width:100%;right:0;left:auto}
+
+#hided{display:none}
+#hided main{position:fixed;z-index:12;left:0;right:0;bottom:30%;height:auto}
+#hided main h2{padding-top:30px}
+#hided main form{margin-bottom:30px}
+
+#copyright{background:#444;color:#ddd;text-align:center;padding:12px 0;font:normal normal 14px/normal "Trebuchet MS";transition:.5s all}
+#copyright:hover{color:white;background:#333}
+#copyright a{color:lime;text-decoration:none;transition:.5s all}
+#copyright a:hover{color:yellow}
